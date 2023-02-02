@@ -5,13 +5,16 @@
     <atom:link href="/feed.xml" rel="self" type="application/rss+xml"/>
     <link>http://localhost:4000/</link>
     <description>A website with blog posts ,pages and portfolio</description>
-    <pubDate>Thu, 02 Feb 2023 02:08:23 +0000</pubDate>
+    <pubDate>Thu, 02 Feb 2023 02:20:06 +0000</pubDate>
     
       <item>
         <title>MandelBrot Set With Excel</title>
         <link>/2023/02/02/MandleBrot_Set.html</link>
         <guid isPermaLink="true">/2023/02/02/MandleBrot_Set.html</guid>
         <description>&lt;p&gt;Making MandelBrot-Set with Excel.&lt;/p&gt;
+&lt;div align=&quot;center&quot;&gt;
+    &lt;img src=&quot;/assets/img/MandelBrot/MandelBrotBanner.webp&quot; alt=&quot;drawing&quot; width=&quot;500&quot; /&gt;
+&lt;/div&gt;
 
 &lt;p&gt;Yes, that is click-bait … This is what I thought when my professor said you will be making Mandelbrot set in Excel !&lt;/p&gt;
 
@@ -103,6 +106,53 @@
 &lt;p&gt;That’s it ! You made fractal using Excel !&lt;/p&gt;
 </description>
         <pubDate>Thu, 02 Feb 2023 00:00:00 +0000</pubDate>
+      </item>
+    
+      <item>
+        <title>My system</title>
+        <link>/2023/01/16/My-System.html</link>
+        <guid isPermaLink="true">/2023/01/16/My-System.html</guid>
+        <description>&lt;h2 id=&quot;journey-of-os-hoping&quot;&gt;&lt;strong&gt;Journey of OS Hoping&lt;/strong&gt;&lt;/h2&gt;
+&lt;div align=&quot;center&quot;&gt;
+    &lt;img src=&quot;/assets/img/MySys/osgif.gif&quot; alt=&quot;drawing&quot; /&gt;
+&lt;/div&gt;
+&lt;p&gt;Like all teenagers, I was using Windows for Gaming (mostly) and some coding (school-level stuff). When Covid happened, during lockdown started reading about the latest tech news. And I was amazed to see how Linux is growing. And I was like “I should try it”. And I did. And I was amazed. Amazed by the customization, performance, community, software, security, privacy, and stability(which I broke many times). I was amazed by the speed and looks. I was amazed by everything. I was using it as a VM and I joined my undergrad. My friend asked me to dual-boot it. Started with Zorin. Was using it for college purposes. Wasn’t into customization at that time. Had all my workspaces set up [a mini actual developer feeling :)]. After a while, my friend again asked me to use Kubuntu, a KDE-based distro. I was like “why not”. He said you can do a lot of customization, I was like YESS I’m in! At first, it felt a little weird without the Zorin Vibe. And Guess what I customized it in such a way that it felt like Zorin (with extra additions). This was the time when I started liking the bar which exists on almost all distros.&lt;/p&gt;
+
+&lt;p&gt;This new attraction of the bar made me customize the bar so much that all the necessary controls are in the bar which I was able to access easily. KDE gave so many widgets that allow people to have some stuff that you need to manually code which will take lots of trials and run!&lt;/p&gt;
+
+&lt;p&gt;After using KDE for quite a long time ~ 7 months, one fine day when I did a system update, the package databases weren’t syncing. I was not able to install anything new. The widgets stopped working and I was pissed off. Then again my friend asked me to use Manjaro, an arch-based distro with GDM. At first, I was like, meh it looks like normal Ubuntu I don’t like it. And I was too attached to KDE that I wanted that workflow as badly as possible. And he sent me the Gnome customizations. And again I fell for it. Lots of Reddit forums and youtube videos. I started experimenting with it. Now the workflow I have is such that with the keybindings only I can move around the system (unless you see configs).&lt;/p&gt;
+
+&lt;p&gt;The current shell theme is &lt;a href=&quot;https://www.gnome-look.org/p/1619506&quot;&gt;Otis&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Legacy Applications theme is &lt;a href=&quot;https://github.com/EliverLara/Kripton&quot;&gt;Kripton&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;The icon theme is &lt;a href=&quot;https://github.com/PapirusDevelopmentTeam/papirus-icon-theme&quot;&gt;Papirus&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Using Gnome-extensions for the top bar and the dock.&lt;/p&gt;
+
+&lt;p&gt;The terminal is Gnome-terminal with the &lt;a href=&quot;https://github.com/romkatv/powerlevel10k&quot;&gt;zsh&lt;/a&gt;. Using blur-my-shell extension to get transparent background and blur it .&lt;/p&gt;
+
+&lt;div align=&quot;center&quot;&gt;
+    &lt;img src=&quot;/assets/img/MySys/neofetch.png&quot; alt=&quot;drawing&quot; /&gt;
+&lt;/div&gt;
+
+&lt;p&gt;And as my course is focused on AI ML installed the GPU related stuff.&lt;/p&gt;
+&lt;div align=&quot;center&quot;&gt;
+    &lt;img src=&quot;/assets/img/MySys/nvidia-smi.png&quot; alt=&quot;drawing&quot; /&gt;
+&lt;/div&gt;
+
+&lt;p&gt;&lt;strong&gt;My Github repo&lt;/strong&gt; &lt;a href=&quot;https://www.github.com/aghoraguru&quot;&gt;here&lt;/a&gt; where mostly college stuff and coding happens 😊.&lt;/p&gt;
+
+&lt;p&gt;That &lt;strong&gt;&lt;em&gt;My friend&lt;/em&gt;&lt;/strong&gt; repo &lt;a href=&quot;https://www.github.com/SuperSecureHuman&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;That’s a wrap ! I would strongly suggest whoever reads this to start using Linux (but don’t just OS hop too much ) , try out different stuff , break - fix - repeat .
+I have always wanted to make Linux Personal, so learning to do all these customization . Soon will be moving to Arch and will update this when some good stuff happens . 😊&lt;/p&gt;
+
+&lt;div align=&quot;center&quot;&gt;
+    &lt;img src=&quot;/assets/img/MySys/bye.gif&quot; alt=&quot;drawing&quot; /&gt;
+&lt;/div&gt;
+</description>
+        <pubDate>Mon, 16 Jan 2023 00:00:00 +0000</pubDate>
       </item>
     
   </channel>

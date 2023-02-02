@@ -5,6 +5,9 @@ feature-img: "assets/img/MandelBrot/MandelBrotBanner.webp"
 
 ---
 Making MandelBrot-Set with Excel.
+<div align="center">
+    <img src="/assets/img/MandelBrot/MandelBrotBanner.webp" alt="drawing" width="500"/>
+</div>
 
 Yes, that is click-bait ... This is what I thought when my professor said you will be making Mandelbrot set in Excel !
 
