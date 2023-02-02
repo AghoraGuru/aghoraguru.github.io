@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<script
+  src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"
+  type="text/javascript">
+</script>
+
+<html class="no-js">
+  <head>
+	<meta charset="utf-8">
+	<title>MandelBrot Set With Excel | Aghora Guru</title>
+	<meta name="description"
+		content="Making MandelBrot-Set with Excel.">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<!-- CSS -->
+	<link rel="stylesheet" href="/assets/css/main.css">
+
+	<!--Favicon-->
+	<link rel="shortcut icon" href="/assets/favicon.ico" type="image/x-icon">
+
+	<!-- Canonical -->
+	<link rel="canonical" href="/2023/02/02/MandleBrot_Set.html">
+
+	<!-- RSS -->
+	<link rel="alternate" type="application/atom+xml" title="Aghora Guru"
+		href="/feed.xml" />
+
+	<!-- Font Awesome -->
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+		integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+
+	<!-- Google Fonts -->
+	
+	<link href="//fonts.googleapis.com/css?family=Source+Sans+Pro:400,700,700italic,400italic" rel="stylesheet"
+		type="text/css">
+	
+
+	<!-- KaTeX -->
+	
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.10.2/dist/katex.min.css"
+		integrity="sha384-yFRtMMDnQtDRO8rLpMIKrtPCD5jdktao2TV19YiZYWMDkUR5GQZR/NOVTdquEx1j" crossorigin="anonymous">
+
+	<script src="https://cdn.jsdelivr.net/npm/katex@0.10.2/dist/katex.min.js"
+		integrity="sha384-9Nhn55MVVN0/4OFx7EE5kpFBPsEMZxKTCnA+4fqDmg12eCTqGi6+BB2LjY8brQxJ"
+		crossorigin="anonymous"></script>
+	
+
+	<!-- Google Analytics -->
+	
+</head>
+  <body>
+    <header class="site-header">
+	<div class="branding">
+		
+		<a href="/">
+			<img class="avatar" src="/assets/img/avatar.png" alt=""/>
+		</a>
+		
+		<h1 class="site-title">
+			<a href="/">Aghora Guru</a>
+		</h1>
+	</div>
+	<nav class="site-nav">
+		<ul>
+			
+			
+			
+			
+			
+			<li>
+				<a class="page-link" href="/about/">
+					About
+				</a>
+			</li>
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			<!-- Social icons from Font Awesome, if enabled  -->
+			
+
+
+<li>
+	<a href="mailto:omenlunatic@gmail.com" title="Email">
+		<i class="fas fa-fw fa-envelope"></i>
+	</a>
+</li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<li>
+	<a href="https://github.com/aghoraguru" title="Follow on GitHub">
+		<i class="fab fa-fw fa-github"></i>
+	</a>
+</li>
+
+
+
+
+
+<li>
+	<a href="http://instagram.com/kalyan.aghora.shivam" title="Follow on Instagram">
+		<i class="fab fa-fw fa-instagram"></i>
+	</a>
+</li>
+
+
+
+<li>
+	<a href="aghoraguru" title="Follow on LinkedIn">
+		<i class="fab fa-fw fa-linkedin"></i>
+	</a>
+</li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<li>
+	<a href="https://twitter.com/aghoraguru" title="Follow on Twitter">
+		<i class="fab fa-fw fa-twitter"></i>
+	</a>
+</li>
+
+
+
+
+
+
+
+
+
+            <!-- Search bar -->
+            
+		</ul>
+	</nav>
+
+</header>
+
+    <div class="content">
+      <article class="feature-image">
+  <header style="background-image: url('/assets/img/MandelBrot/MandelBrotBanner.webp')">
+    <h1 class="title">MandelBrot Set With Excel</h1>
+    
+    <p class="meta">
+      February 2, 2023
+      
+    </p>
+  </header>
+  <section class="post-content"><p>Making MandelBrot-Set with Excel.</p>
+
+<p>Yes, that is click-bait … This is what I thought when my professor said you will be making Mandelbrot set in Excel !</p>
+
+<p>But considering the computing power of my laptop and Excel, I was convinced. Ps: I did it on my friend’s laptop as Linux doesn’t have any good Excel alternative ( fact 1 - I use Manjaro as my daily Driver ( except for gaming duh ) while writing this blog)</p>
+
+<p>We were able to pull off this Mandelbrot in excel using 10 Iterations and going more than this makes your system awestruck .. it freezes.</p>
+
+<p>This was the load on the CPU when I tried to load the Excel file. (fact 2 The file size is ~60 MB)</p>
+
+<p><img src="/assets/img/MandelBrot/SysLoad.avif" alt="img" /></p>
+
+<p><img src="/assets/img/MandelBrot/Excelview1.avif" alt="excelview1" /></p>
+
+<p>These are not some machine codes(not with decimals of course) it is the computation that happens based on the formula which we give in the table.</p>
+
+<p>When all the computations are working well, you will get this as the result!</p>
+
+<div align="center">
+    <img src="/assets/img/MandelBrot/mandelbrot.avif" alt="drawing" width="500" />
+</div>
+
+<p>Not bad for an Excel Computation. Though we cannot zoom into it and get a mind-gaze experience like this, this still is good for me at least.</p>
+
+<h3 id="the-computation">The Computation</h3>
+<p>The Mandelbrot set is a mathematical set of points that are defined using a complex number system. The math behind it involves iterating a complex function, which is defined as follows:</p>
+
+\[f(z) = z^2 + c\]
+
+<p>Where $z$ is a complex number and $c$ is a constant. The function is iterated over and over again, with the result of the previous iteration being used as the input for the next iteration. The iteration stops when the absolute value of the result is greater than 2, or when the iteration count reaches a maximum value. The number of iterations it takes for the absolute value to exceed 2 is the number of times the point is in the Mandelbrot set.</p>
+
+<p>In other words, the Mandelbrot set is the set of all complex numbers “c” for which the sequence of numbers f(0), f(f(0)), f(f(f(0))), etc. remains bounded in magnitude. This means that the magnitude of the numbers in the sequence never grows larger than a certain value (which is usually set to 2).</p>
+
+<p>The Mandelbrot set can be visualized by plotting the complex number “c” on a complex plane and coloring the points according to whether or not the corresponding sequence remains bounded. This produces a beautiful and intricate pattern, which has been studied extensively by mathematicians.</p>
+
+<h3 id="iterating-manually-using-excel">Iterating manually using Excel</h3>
+<p>I took numbers from -2 to +2 with a step size of 0.01 for rows and columns</p>
+
+<div align="center">
+    <img src="/assets/img/MandelBrot/excelcol.avif" alt="drawing" />
+</div>
+
+<div align="center">
+    <img src="/assets/img/MandelBrot/excelrow.avif" alt="drawing" />
+</div>
+
+<p>Then we use the data table from excel to fill up those rows and columns which get formed by the above 2 images.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>    We use the cells B1 and C1 in the Data Analysis tool
+</code></pre></div></div>
+
+<div align="center">
+    <img src="/assets/img/MandelBrot/excelrow2.avif" alt="drawing" />
+</div>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>    It would look like this in the first iteration.
+</code></pre></div></div>
+
+<div align="center">
+    <img src="/assets/img/MandelBrot/excel2.avif" alt="drawing" />
+</div>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>    Use this formula for
+</code></pre></div></div>
+
+<figure class="highlight"><pre><code class="language-js" data-lang="js"><span class="o">=</span><span class="nx">IMSUM</span><span class="p">(</span><span class="nx">IMPRODUCT</span><span class="p">(</span><span class="nx">B3</span><span class="p">,</span><span class="nx">B3</span><span class="p">),</span><span class="nx">B3</span><span class="p">)</span></code></pre></figure>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>    The second iteration will look like this
+</code></pre></div></div>
+<div align="center">
+    <img src="/assets/img/MandelBrot/excelrowsmall.avif" alt="drawing" />
+</div>
+
+<p>Now make a new sheet and put this formula at A1</p>
+
+<figure class="highlight"><pre><code class="language-js" data-lang="js"><span class="o">=</span><span class="nx">IMABS</span><span class="p">(</span><span class="nx">Sheet8</span><span class="o">!</span><span class="nx">B3615</span><span class="p">)</span></code></pre></figure>
+
+<p>And reduce the height and width of cells to make the Mandelbrot visible! It will be without colors, you can change the style of the sheet. Just select all the cells and make a sheet color format and set if the cell value &lt; 2 color it with black.</p>
+
+<div align="center">
+    <img src="/assets/img/MandelBrot/excelverysmall.avif" alt="drawing" />
+</div>
+
+<p>When everything goes well , the final sheet after zooming out should look like :</p>
+
+<div align="center">
+    <img src="/assets/img/MandelBrot/mandelbrot.avif" alt="drawing" width="500" />
+</div>
+
+<p>That’s it ! You made fractal using Excel !</p>
+</section>
+  
+
+</article>
+
+<!-- Disqus -->
+
+
+<!-- Post navigation -->
+
+
+    </div>
+    
+<script src="/assets/js/katex_init.js"></script>
+
+
+
+<footer class="site-footer">
+	<p class="text">Powered by nothing but Data.
+</p>
+</footer>
+
+
+  </body>
+</html>

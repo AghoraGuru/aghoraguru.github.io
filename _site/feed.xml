@@ -5,78 +5,104 @@
     <atom:link href="/feed.xml" rel="self" type="application/rss+xml"/>
     <link>http://localhost:4000/</link>
     <description>A website with blog posts ,pages and portfolio</description>
-    <pubDate>Thu, 02 Feb 2023 00:42:35 +0000</pubDate>
+    <pubDate>Thu, 02 Feb 2023 02:08:23 +0000</pubDate>
     
       <item>
-        <title>First post</title>
-        <link>/2014/11/30/sample-post.html</link>
-        <guid isPermaLink="true">/2014/11/30/sample-post.html</guid>
-        <description>&lt;p&gt;Hash Node link &lt;a href=&quot;https://aghoraguru.hashnode.dev/&quot;&gt;here&lt;/a&gt;&lt;/p&gt;
+        <title>MandelBrot Set With Excel</title>
+        <link>/2023/02/02/MandleBrot_Set.html</link>
+        <guid isPermaLink="true">/2023/02/02/MandleBrot_Set.html</guid>
+        <description>&lt;p&gt;Making MandelBrot-Set with Excel.&lt;/p&gt;
+
+&lt;p&gt;Yes, that is click-bait … This is what I thought when my professor said you will be making Mandelbrot set in Excel !&lt;/p&gt;
+
+&lt;p&gt;But considering the computing power of my laptop and Excel, I was convinced. Ps: I did it on my friend’s laptop as Linux doesn’t have any good Excel alternative ( fact 1 - I use Manjaro as my daily Driver ( except for gaming duh ) while writing this blog)&lt;/p&gt;
+
+&lt;p&gt;We were able to pull off this Mandelbrot in excel using 10 Iterations and going more than this makes your system awestruck .. it freezes.&lt;/p&gt;
+
+&lt;p&gt;This was the load on the CPU when I tried to load the Excel file. (fact 2 The file size is ~60 MB)&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/img/MandelBrot/SysLoad.avif&quot; alt=&quot;img&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/img/MandelBrot/Excelview1.avif&quot; alt=&quot;excelview1&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;These are not some machine codes(not with decimals of course) it is the computation that happens based on the formula which we give in the table.&lt;/p&gt;
+
+&lt;p&gt;When all the computations are working well, you will get this as the result!&lt;/p&gt;
+
+&lt;div align=&quot;center&quot;&gt;
+    &lt;img src=&quot;/assets/img/MandelBrot/mandelbrot.avif&quot; alt=&quot;drawing&quot; width=&quot;500&quot; /&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Not bad for an Excel Computation. Though we cannot zoom into it and get a mind-gaze experience like this, this still is good for me at least.&lt;/p&gt;
+
+&lt;h3 id=&quot;the-computation&quot;&gt;The Computation&lt;/h3&gt;
+&lt;p&gt;The Mandelbrot set is a mathematical set of points that are defined using a complex number system. The math behind it involves iterating a complex function, which is defined as follows:&lt;/p&gt;
+
+\[f(z) = z^2 + c\]
+
+&lt;p&gt;Where $z$ is a complex number and $c$ is a constant. The function is iterated over and over again, with the result of the previous iteration being used as the input for the next iteration. The iteration stops when the absolute value of the result is greater than 2, or when the iteration count reaches a maximum value. The number of iterations it takes for the absolute value to exceed 2 is the number of times the point is in the Mandelbrot set.&lt;/p&gt;
+
+&lt;p&gt;In other words, the Mandelbrot set is the set of all complex numbers “c” for which the sequence of numbers f(0), f(f(0)), f(f(f(0))), etc. remains bounded in magnitude. This means that the magnitude of the numbers in the sequence never grows larger than a certain value (which is usually set to 2).&lt;/p&gt;
+
+&lt;p&gt;The Mandelbrot set can be visualized by plotting the complex number “c” on a complex plane and coloring the points according to whether or not the corresponding sequence remains bounded. This produces a beautiful and intricate pattern, which has been studied extensively by mathematicians.&lt;/p&gt;
+
+&lt;h3 id=&quot;iterating-manually-using-excel&quot;&gt;Iterating manually using Excel&lt;/h3&gt;
+&lt;p&gt;I took numbers from -2 to +2 with a step size of 0.01 for rows and columns&lt;/p&gt;
+
+&lt;div align=&quot;center&quot;&gt;
+    &lt;img src=&quot;/assets/img/MandelBrot/excelcol.avif&quot; alt=&quot;drawing&quot; /&gt;
+&lt;/div&gt;
+
+&lt;div align=&quot;center&quot;&gt;
+    &lt;img src=&quot;/assets/img/MandelBrot/excelrow.avif&quot; alt=&quot;drawing&quot; /&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Then we use the data table from excel to fill up those rows and columns which get formed by the above 2 images.&lt;/p&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;    We use the cells B1 and C1 in the Data Analysis tool
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;div align=&quot;center&quot;&gt;
+    &lt;img src=&quot;/assets/img/MandelBrot/excelrow2.avif&quot; alt=&quot;drawing&quot; /&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;    It would look like this in the first iteration.
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;div align=&quot;center&quot;&gt;
+    &lt;img src=&quot;/assets/img/MandelBrot/excel2.avif&quot; alt=&quot;drawing&quot; /&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;    Use this formula for
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-js&quot; data-lang=&quot;js&quot;&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;IMSUM&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;IMPRODUCT&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;B3&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;B3&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;),&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;B3&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;    The second iteration will look like this
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;div align=&quot;center&quot;&gt;
+    &lt;img src=&quot;/assets/img/MandelBrot/excelrowsmall.avif&quot; alt=&quot;drawing&quot; /&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Now make a new sheet and put this formula at A1&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-js&quot; data-lang=&quot;js&quot;&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;IMABS&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;Sheet8&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;!&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;B3615&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;And reduce the height and width of cells to make the Mandelbrot visible! It will be without colors, you can change the style of the sheet. Just select all the cells and make a sheet color format and set if the cell value &amp;lt; 2 color it with black.&lt;/p&gt;
+
+&lt;div align=&quot;center&quot;&gt;
+    &lt;img src=&quot;/assets/img/MandelBrot/excelverysmall.avif&quot; alt=&quot;drawing&quot; /&gt;
+&lt;/div&gt;
+
+&lt;p&gt;When everything goes well , the final sheet after zooming out should look like :&lt;/p&gt;
+
+&lt;div align=&quot;center&quot;&gt;
+    &lt;img src=&quot;/assets/img/MandelBrot/mandelbrot.avif&quot; alt=&quot;drawing&quot; width=&quot;500&quot; /&gt;
+&lt;/div&gt;
+
+&lt;p&gt;That’s it ! You made fractal using Excel !&lt;/p&gt;
 </description>
-        <pubDate>Sun, 30 Nov 2014 00:00:00 +0000</pubDate>
-      </item>
-    
-      <item>
-        <title>Feature images</title>
-        <link>/2014/11/29/feature-images.html</link>
-        <guid isPermaLink="true">/2014/11/29/feature-images.html</guid>
-        <description>&lt;p&gt;This is an example of a post which includes a feature image specified in the front matter of the post. The feature image spans the full-width of the page, and is shown with the title on permalink pages.&lt;/p&gt;
-</description>
-        <pubDate>Sat, 29 Nov 2014 00:00:00 +0000</pubDate>
-      </item>
-    
-      <item>
-        <title>Markdown and HTML</title>
-        <link>/2014/11/28/markdown-and-html.html</link>
-        <guid isPermaLink="true">/2014/11/28/markdown-and-html.html</guid>
-        <description>&lt;p&gt;Jekyll supports the use of &lt;a href=&quot;http://daringfireball.net/projects/markdown/syntax&quot;&gt;Markdown&lt;/a&gt; with inline HTML tags which makes it easier to quickly write posts with Jekyll, without having to worry too much about text formatting. A sample of the formatting follows.&lt;/p&gt;
-
-&lt;p&gt;Tables have also been extended from Markdown:&lt;/p&gt;
-
-&lt;table&gt;
-  &lt;thead&gt;
-    &lt;tr&gt;
-      &lt;th&gt;First Header&lt;/th&gt;
-      &lt;th&gt;Second Header&lt;/th&gt;
-    &lt;/tr&gt;
-  &lt;/thead&gt;
-  &lt;tbody&gt;
-    &lt;tr&gt;
-      &lt;td&gt;Content Cell&lt;/td&gt;
-      &lt;td&gt;Content Cell&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;Content Cell&lt;/td&gt;
-      &lt;td&gt;Content Cell&lt;/td&gt;
-    &lt;/tr&gt;
-  &lt;/tbody&gt;
-&lt;/table&gt;
-
-&lt;p&gt;Here’s an example of an image, which is included using Markdown:&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/img/sample_feature_img_2.png&quot; alt=&quot;Geometric pattern with fading gradient&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;Highlighting for code in Jekyll is done using Pygments or Rouge. This theme makes use of Rouge by default.&lt;/p&gt;
-
-&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-js&quot; data-lang=&quot;js&quot;&gt;&lt;span class=&quot;c1&quot;&gt;// count to ten&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;for&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;kd&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;i&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;i&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;lt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;10&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;++&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-    &lt;span class=&quot;nx&quot;&gt;console&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
-&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-
-&lt;span class=&quot;c1&quot;&gt;// count to twenty&lt;/span&gt;
-&lt;span class=&quot;kd&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;j&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;while&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;j&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;20&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-    &lt;span class=&quot;nx&quot;&gt;j&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;++&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-    &lt;span class=&quot;nx&quot;&gt;console&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;j&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
-&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
-
-&lt;p&gt;Type Theme uses KaTeX to display maths. Equations such as \(S_n = a \times \frac{1-r^n}{1-r}\) can be displayed inline.&lt;/p&gt;
-
-&lt;p&gt;Alternatively, they can be shown on a new line:&lt;/p&gt;
-
-\[f(x) = \int \frac{2x^2+4x+6}{x-2}\]
-</description>
-        <pubDate>Fri, 28 Nov 2014 00:00:00 +0000</pubDate>
+        <pubDate>Thu, 02 Feb 2023 00:00:00 +0000</pubDate>
       </item>
     
   </channel>
