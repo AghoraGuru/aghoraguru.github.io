@@ -16,7 +16,7 @@ theme_settings:
                 Home
   header_text_feature_image:
   footer_text: >
-   Powered by <a href="https://github.com/AghoraGuru/"> Github </a> with ❤️ </a>
+   Powered by nothing but Data.
 
   # Icons
   rss: false
@@ -31,7 +31,7 @@ theme_settings:
   gitter:
   google_plus:
   instagram: kalyan.aghora.shivam
-  linkedin:  www.linkedin.com/in/aghoraguru
+  linkedin:  aghoraguru
   pinterest:
   reddit:
   soundcloud:
