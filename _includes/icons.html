@@ -149,7 +149,14 @@
 	</a>
 </li>
 {% endif %}
-
+<button>
+	<a class="dark-mode-button" >
+		<i id="icon-dark" class="fa fa-moon"></i>
+		<span id="dark-text">Sunset</span>
+	  </a>
+</button>
+<script src="https://cdn.jsdelivr.net/npm/darkreader@4.9.44/darkreader.js"></script>
+<script src="/assets/js/updation.js"></script>
 {% if site.theme_settings.wordpress %}
 <li>
 	<a href="https://{{ site.theme_settings.wordpress }}.wordpress.com/" title="{{ site.theme_settings.str_follow_on }} WordPress">
