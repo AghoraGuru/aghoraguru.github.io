@@ -89,19 +89,19 @@ C = [[0, 0, 0], [0, 0, 0], [0, 0, 0]]
 X = [[A[i][j] + B[i][j] for j in range(len(A[0]))] for i in range(len(A))]
 #multiplying matrices
 Y = [[sum(a*b for a,b in zip(A_row,B_col)) for B_col in zip(*B)] for A_row in A]
-```
+```py
 <img align="center" src="/assets/img/Handcalcs/out3.png">
 
 
 We can force a render to be long(rendering in a multiple line) or short(rendering in a single line) by using the following tags:
-```
+```py
 %%render long
 x_pos = -b + sqrt(b**2 - 4*a*c) / (2*a) -b + sqrt(b**2 - 4*a*c)/(2*a)
 ```
 
 <img align="center" src="/assets/img/Handcalcs/output5.png">
 
-```
+```py
 %%render short
 x_pos = -b + sqrt(b**2 - 4*a*c) / (2*a) -b + sqrt(b**2 - 4*a*c)/(2*a)
 ```
@@ -110,7 +110,7 @@ x_pos = -b + sqrt(b**2 - 4*a*c) / (2*a) -b + sqrt(b**2 - 4*a*c)/(2*a)
 ### LATEX Render
 
 We can also get the LATEX equivalent of the output by using the following tag:
-```
+```py
 %%tex
 x_pos = -b + sqrt(b**2 - 4*a*c) / (2*a) -b + sqrt(b**2 - 4*a*c)/(2*a)
 ```
@@ -119,14 +119,14 @@ x_pos = -b + sqrt(b**2 - 4*a*c) / (2*a) -b + sqrt(b**2 - 4*a*c)/(2*a)
 ### Subscripting and Superscripting
 
 We can go on adding subscripts using `_` and superscripts using `**` like this:
-```
+```py
 %%render
 #subscripting look at x_pos
 x_pos = -b + sqrt(b**2 - 4*a*c) / (2*a) -b + sqrt(b**2 - 4*a*c)/(2*a)
 ```
 <img align="center" src="/assets/img/Handcalcs/output8.png">
 
-```
+```py
 %%render
 #subperscipting , look at b
 x_pos = b**2 - 4*a*c
@@ -138,7 +138,7 @@ They have a support for a list of greek symbols :
 <img align="center" src="/assets/img/Handcalcs/table.png">
 
 ### It supports for comment rendering too! 
-```
+```py
 %%render short params 6
 x_pos = -b + sqrt(b**2 - 4*a*c) / (2*a) -b + sqrt(b**2 - 4*a*c)/(2*a) #comments
 ```
@@ -146,7 +146,7 @@ x_pos = -b + sqrt(b**2 - 4*a*c) / (2*a) -b + sqrt(b**2 - 4*a*c)/(2*a) #comments
 <img align="center" src="/assets/img/Handcalcs/comments.png">
 
 ### Conditional Rendering
-```
+```py
 %%render 
 #conditional statements
 x = 1
