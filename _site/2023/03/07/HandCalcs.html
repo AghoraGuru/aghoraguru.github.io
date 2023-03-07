@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<script
+  src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"
+  type="text/javascript">
+</script>
+
+<html class="no-js">
+  <head>
+	<meta charset="utf-8">
+	<title>HandCalcs | Kalyana Sundaram</title>
+	<meta name="description"
+		content="Handcalcs: The Ultimate Tool for Simplifying Your Jupyter Notebooks">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<!-- CSS -->
+	<link rel="stylesheet" href="/assets/css/main.css">
+
+	<!--Favicon-->
+	<link rel="shortcut icon" href="/assets/favicon.ico" type="image/x-icon">
+
+	<!-- Canonical -->
+	<link rel="canonical" href="/2023/03/07/HandCalcs.html">
+
+	<!-- RSS -->
+	<link rel="alternate" type="application/atom+xml" title="Kalyana Sundaram"
+		href="/feed.xml" />
+
+	<!-- Font Awesome -->
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+		integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+
+	<!-- Google Fonts -->
+	
+	<link href="//fonts.googleapis.com/css?family=Source+Sans+Pro:400,700,700italic,400italic" rel="stylesheet"
+		type="text/css">
+	
+
+	<!-- KaTeX -->
+	
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.10.2/dist/katex.min.css"
+		integrity="sha384-yFRtMMDnQtDRO8rLpMIKrtPCD5jdktao2TV19YiZYWMDkUR5GQZR/NOVTdquEx1j" crossorigin="anonymous">
+
+	<script src="https://cdn.jsdelivr.net/npm/katex@0.10.2/dist/katex.min.js"
+		integrity="sha384-9Nhn55MVVN0/4OFx7EE5kpFBPsEMZxKTCnA+4fqDmg12eCTqGi6+BB2LjY8brQxJ"
+		crossorigin="anonymous"></script>
+	
+
+	<!-- Google Analytics -->
+	
+</head>
+  <body>
+    <header class="site-header">
+	<div class="branding">
+		
+		<a href="/">
+			<img class="avatar" src="/assets/img/avatar.png" alt=""/>
+		</a>
+		
+		<h1 class="site-title">
+			<a href="/">Kalyana Sundaram</a>
+		</h1>
+	</div>
+	<nav class="site-nav">
+		<ul>
+			
+			
+			
+			
+			
+			<li>
+				<a class="page-link" href="/about/">
+					About
+				</a>
+			</li>
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			<!-- Social icons from Font Awesome, if enabled  -->
+			
+
+
+<li>
+	<a href="mailto:omenlunatic@gmail.com" title="Email">
+		<i class="fas fa-fw fa-envelope"></i>
+	</a>
+</li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<li>
+	<a href="https://github.com/aghoraguru" title="Follow on GitHub">
+		<i class="fab fa-fw fa-github"></i>
+	</a>
+</li>
+
+
+
+
+
+<li>
+	<a href="http://instagram.com/kalyan.aghora.shivam" title="Follow on Instagram">
+		<i class="fab fa-fw fa-instagram"></i>
+	</a>
+</li>
+
+
+
+<li>
+	<a href="http://linkedin.com/in/aghoraguru" title="Follow on LinkedIn">
+		<i class="fab fa-fw fa-linkedin"></i>
+	</a>
+</li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<li>
+	<a href="https://twitter.com/aghoraguru" title="Follow on Twitter">
+		<i class="fab fa-fw fa-twitter"></i>
+	</a>
+</li>
+
+<button title="dark-mode-button" >
+	<a class="dark-mode-button" >
+		<i id="icon-dark" class="fa fa-moon"></i>
+	  </a>
+</button>
+<script src="https://cdn.jsdelivr.net/npm/darkreader@4.9.44/darkreader.js"></script>
+<script src="/assets/js/updation.js"></script>
+
+
+
+
+
+
+
+            <!-- Search bar -->
+            
+		</ul>
+	</nav>
+</header>
+
+    <div class="content">
+      <article class="feature-image">
+  <header style="background-image: url('/assets/img/Handcalcs/code.png')">
+    <h1 class="title">HandCalcs</h1>
+    
+    <p class="meta">
+      March 7, 2023
+      
+    </p>
+    
+  </header>
+  <section class="post-content"><h1 align="center">Handcalcs: The Ultimate Tool for Simplifying Your Jupyter Notebooks</h1>
+
+<p>Have you become weary of composing intricate equations in LaTeX within your Jupyter notebooks? Do you wish there was a less complicated way to clearly and concisely communicate your calculations and formulae? You are in luck if so! With the help of the robust Python module Handcalcs, you can speed up your computations and improve the appearance of your Jupyter notebooks. In this blog post, we’ll look at the advantages of utilising Handcalcs and how it can help you complete data analysis jobs faster and with less effort. So let’s get started and learn how Handcalcs can make your life as a data scientist easier!</p>
+<h3 id="first-things-first-what-is-handcalcs">First Things First: What is Handcalcs?</h3>
+<p>Handcalcs is a library to render Python calculation code automatically in Latex, but in a manner that mimics how one might format their calculation if it were written with a pencil: write the symbolic formula, followed by numeric substitutions, and then the result.</p>
+
+<p>Because handcalcs shows the numeric substitution, the calculations become significantly easier to check and verify by hand.</p>
+
+<p>PS : Copied from <a href="https://github.com/connorferster/handcalcs#readme">here</a> 😅</p>
+
+<h3 id="installaion">Installaion</h3>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>pip <span class="nb">install </span>handcalcs
+</code></pre></div></div>
+<h3 id="importing-handcalcs">Importing Handcalcs</h3>
+<div class="language-py highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">from</span> <span class="nn">handcalcs</span> <span class="kn">import</span> <span class="n">handcalc</span>
+</code></pre></div></div>
+<h3 id="how-it-works">How it Works?</h3>
+<p>In order to extract the math expressions from the input and analyse the Python code, Handcalcs first employs a parser. The SymPy library, a Python library for symbolic mathematics, serves as the foundation for this parser.</p>
+
+<p>The retrieved mathematical expressions are then transformed by Handcalcs into SymPy expressions, which are symbolic expressions that represent mathematical formulas in a format that is simple to use and understand.</p>
+
+<p>Handcalcs applies a set of formatting guidelines to transform the math expressions from SymPy expressions into LaTeX style. These guidelines include arranging the equations for easier reading, providing annotations, units, and variable descriptions, as well as formatting the math expressions using LaTeX syntax.
+The prepared equations are then displayed in a LaTeX output that Handcalcs produces. The package includes built-in LaTeX rendering capabilities that may be used to show this output in a Jupyter notebook or copy it and paste it into a LaTeX document.</p>
+
+<p><img align="center" src="/assets/img/Handcalcs/step1.png" style="zoom:100%;" alt="step1" /></p>
+
+<h3 id="how-to-use-handcalcs">How to Use Handcalcs?</h3>
+
+<h3 id="default-render">Default Render</h3>
+<div class="language-py highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">import</span> <span class="nn">handcalcs.render</span>
+<span class="kn">from</span> <span class="nn">math</span> <span class="kn">import</span> <span class="n">sqrt</span>
+</code></pre></div></div>
+<div class="language-py highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="o">%%</span><span class="n">render</span>
+<span class="n">a</span> <span class="o">=</span> <span class="mi">1</span>
+<span class="n">b</span> <span class="o">=</span> <span class="o">-</span><span class="mi">31</span><span class="o">/</span><span class="mi">3</span>
+<span class="n">c</span> <span class="o">=</span> <span class="mi">3</span>
+</code></pre></div></div>
+<p><img align="center" src="/assets/img/Handcalcs/out1._1.png" /></p>
+
+<h3 id="symbolic-render">Symbolic Render</h3>
+
+<div class="language-py highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="o">%%</span><span class="n">render</span> <span class="n">symbolic</span>
+<span class="n">x_pos</span> <span class="o">=</span> <span class="o">-</span><span class="n">b</span> <span class="o">+</span> <span class="n">sqrt</span><span class="p">(</span><span class="n">b</span><span class="o">**</span><span class="mi">2</span> <span class="o">-</span> <span class="mi">4</span><span class="o">*</span><span class="n">a</span><span class="o">*</span><span class="n">c</span><span class="p">)</span> <span class="o">/</span> <span class="p">(</span><span class="mi">2</span><span class="o">*</span><span class="n">a</span><span class="p">)</span> <span class="o">-</span><span class="n">b</span> <span class="o">+</span> <span class="n">sqrt</span><span class="p">(</span><span class="n">b</span><span class="o">**</span><span class="mi">2</span> <span class="o">-</span> <span class="mi">4</span><span class="o">*</span><span class="n">a</span><span class="o">*</span><span class="n">c</span><span class="p">)</span><span class="o">/</span><span class="p">(</span><span class="mi">2</span><span class="o">*</span><span class="n">a</span><span class="p">)</span>
+</code></pre></div></div>
+<p>This will give only the symbolic output without values</p>
+
+<p><img align="center" src="/assets/img/Handcalcs/out2.png" /></p>
+
+<h3 id="truncating-output">Truncating Output</h3>
+
+<p>We can also add Override tags which will truncate the output which visually looks small like this:</p>
+<div class="language-py highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="o">%%</span><span class="n">render</span> <span class="n">params</span>
+<span class="n">a</span> <span class="o">=</span> <span class="mi">1</span>
+<span class="n">b</span> <span class="o">=</span> <span class="o">-</span><span class="mi">31</span><span class="o">/</span><span class="mi">3</span>
+<span class="n">c</span> <span class="o">=</span> <span class="mi">3</span>
+</code></pre></div></div>
+<p><img align="center" src="/assets/img/Handcalcs/out4.png" /></p>
+
+<div class="language-py highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="o">%%</span><span class="n">render</span> <span class="n">params</span> <span class="mi">6</span> 
+<span class="n">a</span> <span class="o">=</span> <span class="mi">1</span>
+<span class="n">b</span> <span class="o">=</span> <span class="o">-</span><span class="mi">31</span><span class="o">/</span><span class="mi">3</span>
+<span class="n">c</span> <span class="o">=</span> <span class="mi">3</span>
+</code></pre></div></div>
+<p>This will truncate the output</p>
+
+<p><img align="center" src="/assets/img/Handcalcs/out1.png" /></p>
+
+<div class="language-py highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="o">%%</span><span class="n">render</span> 
+<span class="c1"># matrix calulations
+</span><span class="n">A</span> <span class="o">=</span> <span class="p">[[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">],</span> <span class="p">[</span><span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">6</span><span class="p">],</span> <span class="p">[</span><span class="mi">7</span><span class="p">,</span> <span class="mi">8</span><span class="p">,</span> <span class="mi">9</span><span class="p">]]</span>
+<span class="n">B</span> <span class="o">=</span> <span class="p">[[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">],</span> <span class="p">[</span><span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">6</span><span class="p">],</span> <span class="p">[</span><span class="mi">7</span><span class="p">,</span> <span class="mi">8</span><span class="p">,</span> <span class="mi">9</span><span class="p">]]</span>
+<span class="n">C</span> <span class="o">=</span> <span class="p">[[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">],</span> <span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">],</span> <span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">]]</span>
+<span class="c1">#adding matrices
+</span><span class="n">X</span> <span class="o">=</span> <span class="p">[[</span><span class="n">A</span><span class="p">[</span><span class="n">i</span><span class="p">][</span><span class="n">j</span><span class="p">]</span> <span class="o">+</span> <span class="n">B</span><span class="p">[</span><span class="n">i</span><span class="p">][</span><span class="n">j</span><span class="p">]</span> <span class="k">for</span> <span class="n">j</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">A</span><span class="p">[</span><span class="mi">0</span><span class="p">]))]</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">A</span><span class="p">))]</span>
+<span class="c1">#multiplying matrices
+</span><span class="n">Y</span> <span class="o">=</span> <span class="p">[[</span><span class="nb">sum</span><span class="p">(</span><span class="n">a</span><span class="o">*</span><span class="n">b</span> <span class="k">for</span> <span class="n">a</span><span class="p">,</span><span class="n">b</span> <span class="ow">in</span> <span class="nb">zip</span><span class="p">(</span><span class="n">A_row</span><span class="p">,</span><span class="n">B_col</span><span class="p">))</span> <span class="k">for</span> <span class="n">B_col</span> <span class="ow">in</span> <span class="nb">zip</span><span class="p">(</span><span class="o">*</span><span class="n">B</span><span class="p">)]</span> <span class="k">for</span> <span class="n">A_row</span> <span class="ow">in</span> <span class="n">A</span><span class="p">]</span>
+</code></pre></div></div>
+<p><img align="center" src="/assets/img/Handcalcs/out3.png" /></p>
+
+<p>We can force a render to be long(rendering in a multiple line) or short(rendering in a single line) by using the following tags:</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>%%render long
+x_pos = -b + sqrt(b**2 - 4*a*c) / (2*a) -b + sqrt(b**2 - 4*a*c)/(2*a)
+</code></pre></div></div>
+
+<p><img align="center" src="/assets/img/Handcalcs/output5.png" /></p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>%%render short
+x_pos = -b + sqrt(b**2 - 4*a*c) / (2*a) -b + sqrt(b**2 - 4*a*c)/(2*a)
+</code></pre></div></div>
+<p><img align="center" src="/assets/img/Handcalcs/output6.png" /></p>
+
+<h3 id="latex-render">LATEX Render</h3>
+
+<p>We can also get the LATEX equivalent of the output by using the following tag:</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>%%tex
+x_pos = -b + sqrt(b**2 - 4*a*c) / (2*a) -b + sqrt(b**2 - 4*a*c)/(2*a)
+</code></pre></div></div>
+<p><img align="center" src="/assets/img/Handcalcs/output7.png" /></p>
+
+<h3 id="subscripting-and-superscripting">Subscripting and Superscripting</h3>
+
+<p>We can go on adding subscripts using <code class="language-plaintext highlighter-rouge">_</code> and superscripts using <code class="language-plaintext highlighter-rouge">**</code> like this:</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>%%render
+#subscripting look at x_pos
+x_pos = -b + sqrt(b**2 - 4*a*c) / (2*a) -b + sqrt(b**2 - 4*a*c)/(2*a)
+</code></pre></div></div>
+<p><img align="center" src="/assets/img/Handcalcs/output8.png" /></p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>%%render
+#subperscipting , look at b
+x_pos = b**2 - 4*a*c
+</code></pre></div></div>
+<p><img align="center" src="/assets/img/Handcalcs/output9.png" /></p>
+
+<h3 id="greek-symbols">Greek Symbols</h3>
+<p>They have a support for a list of greek symbols :
+<img align="center" src="/assets/img/Handcalcs/table.png" /></p>
+
+<h3 id="it-supports-for-comment-rendering-too">It supports for comment rendering too!</h3>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>%%render short params 6
+x_pos = -b + sqrt(b**2 - 4*a*c) / (2*a) -b + sqrt(b**2 - 4*a*c)/(2*a) #comments
+</code></pre></div></div>
+
+<p><img align="center" src="/assets/img/Handcalcs/comments.png" /></p>
+
+<h3 id="conditional-rendering">Conditional Rendering</h3>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>%%render 
+#conditional statements
+x = 1
+if x &gt; 0: b = 2*x
+elif x &lt; 0: b=y
+</code></pre></div></div>
+<p><img align="center" src="/assets/img/Handcalcs/conditional.png" /></p>
+
+<p>Overall this is a good package to use for rendering your calculations in a more readable format. It is a good alternative to using LaTeX in your Jupyter notebooks. It is also a good package to use for teaching students as it makes the calculations more readable and understandable.</p>
+
+<p>Their GitHub repo is <a href="https://github.com/connorferster/handcalcs">here</a></p>
+</section>
+  
+  
+
+</article>
+
+<!-- Disqus -->
+
+
+<!-- Post navigation -->
+
+  <div id="post-nav">
+  
+  <div id="previous-post" class="post-nav-post">
+      <p>Previous post</p>
+      <a href="/2023/02/02/MandleBrot_Set.html">
+        MandelBrot Set With Excel
+      </a>
+  </div>
+  
+  
+</div>
+
+
+    </div>
+    
+<script src="/assets/js/katex_init.js"></script>
+
+
+
+<footer class="site-footer">
+	<p class="text">Powered by nothing but Data.
+</p>
+</footer>
+
+
+  </body>
+</html>
