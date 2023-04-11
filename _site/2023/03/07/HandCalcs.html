@@ -261,41 +261,43 @@ The prepared equations are then displayed in a LaTeX output that Handcalcs produ
 </span><span class="n">X</span> <span class="o">=</span> <span class="p">[[</span><span class="n">A</span><span class="p">[</span><span class="n">i</span><span class="p">][</span><span class="n">j</span><span class="p">]</span> <span class="o">+</span> <span class="n">B</span><span class="p">[</span><span class="n">i</span><span class="p">][</span><span class="n">j</span><span class="p">]</span> <span class="k">for</span> <span class="n">j</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">A</span><span class="p">[</span><span class="mi">0</span><span class="p">]))]</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">A</span><span class="p">))]</span>
 <span class="c1">#multiplying matrices
 </span><span class="n">Y</span> <span class="o">=</span> <span class="p">[[</span><span class="nb">sum</span><span class="p">(</span><span class="n">a</span><span class="o">*</span><span class="n">b</span> <span class="k">for</span> <span class="n">a</span><span class="p">,</span><span class="n">b</span> <span class="ow">in</span> <span class="nb">zip</span><span class="p">(</span><span class="n">A_row</span><span class="p">,</span><span class="n">B_col</span><span class="p">))</span> <span class="k">for</span> <span class="n">B_col</span> <span class="ow">in</span> <span class="nb">zip</span><span class="p">(</span><span class="o">*</span><span class="n">B</span><span class="p">)]</span> <span class="k">for</span> <span class="n">A_row</span> <span class="ow">in</span> <span class="n">A</span><span class="p">]</span>
-</code></pre></div></div>
-<p><img align="center" src="/assets/img/Handcalcs/out3.png" /></p>
+<span class="sb">``</span><span class="err">`</span><span class="n">py</span>
+<span class="o">&lt;</span><span class="n">img</span> <span class="n">align</span><span class="o">=</span><span class="s">"center"</span> <span class="n">src</span><span class="o">=</span><span class="s">"/assets/img/Handcalcs/out3.png"</span><span class="o">&gt;</span>
 
-<p>We can force a render to be long(rendering in a multiple line) or short(rendering in a single line) by using the following tags:</p>
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>%%render long
-x_pos = -b + sqrt(b**2 - 4*a*c) / (2*a) -b + sqrt(b**2 - 4*a*c)/(2*a)
+
+<span class="n">We</span> <span class="n">can</span> <span class="n">force</span> <span class="n">a</span> <span class="n">render</span> <span class="n">to</span> <span class="n">be</span> <span class="nb">long</span><span class="p">(</span><span class="n">rendering</span> <span class="ow">in</span> <span class="n">a</span> <span class="n">multiple</span> <span class="n">line</span><span class="p">)</span> <span class="ow">or</span> <span class="n">short</span><span class="p">(</span><span class="n">rendering</span> <span class="ow">in</span> <span class="n">a</span> <span class="n">single</span> <span class="n">line</span><span class="p">)</span> <span class="n">by</span> <span class="n">using</span> <span class="n">the</span> <span class="n">following</span> <span class="n">tags</span><span class="p">:</span>
+<span class="sb">``</span><span class="err">`</span><span class="n">py</span>
+<span class="o">%%</span><span class="n">render</span> <span class="nb">long</span>
+<span class="n">x_pos</span> <span class="o">=</span> <span class="o">-</span><span class="n">b</span> <span class="o">+</span> <span class="n">sqrt</span><span class="p">(</span><span class="n">b</span><span class="o">**</span><span class="mi">2</span> <span class="o">-</span> <span class="mi">4</span><span class="o">*</span><span class="n">a</span><span class="o">*</span><span class="n">c</span><span class="p">)</span> <span class="o">/</span> <span class="p">(</span><span class="mi">2</span><span class="o">*</span><span class="n">a</span><span class="p">)</span> <span class="o">-</span><span class="n">b</span> <span class="o">+</span> <span class="n">sqrt</span><span class="p">(</span><span class="n">b</span><span class="o">**</span><span class="mi">2</span> <span class="o">-</span> <span class="mi">4</span><span class="o">*</span><span class="n">a</span><span class="o">*</span><span class="n">c</span><span class="p">)</span><span class="o">/</span><span class="p">(</span><span class="mi">2</span><span class="o">*</span><span class="n">a</span><span class="p">)</span>
 </code></pre></div></div>
 
 <p><img align="center" src="/assets/img/Handcalcs/output5.png" /></p>
 
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>%%render short
-x_pos = -b + sqrt(b**2 - 4*a*c) / (2*a) -b + sqrt(b**2 - 4*a*c)/(2*a)
+<div class="language-py highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="o">%%</span><span class="n">render</span> <span class="n">short</span>
+<span class="n">x_pos</span> <span class="o">=</span> <span class="o">-</span><span class="n">b</span> <span class="o">+</span> <span class="n">sqrt</span><span class="p">(</span><span class="n">b</span><span class="o">**</span><span class="mi">2</span> <span class="o">-</span> <span class="mi">4</span><span class="o">*</span><span class="n">a</span><span class="o">*</span><span class="n">c</span><span class="p">)</span> <span class="o">/</span> <span class="p">(</span><span class="mi">2</span><span class="o">*</span><span class="n">a</span><span class="p">)</span> <span class="o">-</span><span class="n">b</span> <span class="o">+</span> <span class="n">sqrt</span><span class="p">(</span><span class="n">b</span><span class="o">**</span><span class="mi">2</span> <span class="o">-</span> <span class="mi">4</span><span class="o">*</span><span class="n">a</span><span class="o">*</span><span class="n">c</span><span class="p">)</span><span class="o">/</span><span class="p">(</span><span class="mi">2</span><span class="o">*</span><span class="n">a</span><span class="p">)</span>
 </code></pre></div></div>
 <p><img align="center" src="/assets/img/Handcalcs/output6.png" /></p>
 
 <h3 id="latex-render">LATEX Render</h3>
 
 <p>We can also get the LATEX equivalent of the output by using the following tag:</p>
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>%%tex
-x_pos = -b + sqrt(b**2 - 4*a*c) / (2*a) -b + sqrt(b**2 - 4*a*c)/(2*a)
+<div class="language-py highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="o">%%</span><span class="n">tex</span>
+<span class="n">x_pos</span> <span class="o">=</span> <span class="o">-</span><span class="n">b</span> <span class="o">+</span> <span class="n">sqrt</span><span class="p">(</span><span class="n">b</span><span class="o">**</span><span class="mi">2</span> <span class="o">-</span> <span class="mi">4</span><span class="o">*</span><span class="n">a</span><span class="o">*</span><span class="n">c</span><span class="p">)</span> <span class="o">/</span> <span class="p">(</span><span class="mi">2</span><span class="o">*</span><span class="n">a</span><span class="p">)</span> <span class="o">-</span><span class="n">b</span> <span class="o">+</span> <span class="n">sqrt</span><span class="p">(</span><span class="n">b</span><span class="o">**</span><span class="mi">2</span> <span class="o">-</span> <span class="mi">4</span><span class="o">*</span><span class="n">a</span><span class="o">*</span><span class="n">c</span><span class="p">)</span><span class="o">/</span><span class="p">(</span><span class="mi">2</span><span class="o">*</span><span class="n">a</span><span class="p">)</span>
 </code></pre></div></div>
 <p><img align="center" src="/assets/img/Handcalcs/output7.png" /></p>
 
 <h3 id="subscripting-and-superscripting">Subscripting and Superscripting</h3>
 
 <p>We can go on adding subscripts using <code class="language-plaintext highlighter-rouge">_</code> and superscripts using <code class="language-plaintext highlighter-rouge">**</code> like this:</p>
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>%%render
-#subscripting look at x_pos
-x_pos = -b + sqrt(b**2 - 4*a*c) / (2*a) -b + sqrt(b**2 - 4*a*c)/(2*a)
+<div class="language-py highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="o">%%</span><span class="n">render</span>
+<span class="c1">#subscripting look at x_pos
+</span><span class="n">x_pos</span> <span class="o">=</span> <span class="o">-</span><span class="n">b</span> <span class="o">+</span> <span class="n">sqrt</span><span class="p">(</span><span class="n">b</span><span class="o">**</span><span class="mi">2</span> <span class="o">-</span> <span class="mi">4</span><span class="o">*</span><span class="n">a</span><span class="o">*</span><span class="n">c</span><span class="p">)</span> <span class="o">/</span> <span class="p">(</span><span class="mi">2</span><span class="o">*</span><span class="n">a</span><span class="p">)</span> <span class="o">-</span><span class="n">b</span> <span class="o">+</span> <span class="n">sqrt</span><span class="p">(</span><span class="n">b</span><span class="o">**</span><span class="mi">2</span> <span class="o">-</span> <span class="mi">4</span><span class="o">*</span><span class="n">a</span><span class="o">*</span><span class="n">c</span><span class="p">)</span><span class="o">/</span><span class="p">(</span><span class="mi">2</span><span class="o">*</span><span class="n">a</span><span class="p">)</span>
 </code></pre></div></div>
 <p><img align="center" src="/assets/img/Handcalcs/output8.png" /></p>
 
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>%%render
-#subperscipting , look at b
-x_pos = b**2 - 4*a*c
+<div class="language-py highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="o">%%</span><span class="n">render</span>
+<span class="c1">#subperscipting , look at b
+</span><span class="n">x_pos</span> <span class="o">=</span> <span class="n">b</span><span class="o">**</span><span class="mi">2</span> <span class="o">-</span> <span class="mi">4</span><span class="o">*</span><span class="n">a</span><span class="o">*</span><span class="n">c</span>
 </code></pre></div></div>
 <p><img align="center" src="/assets/img/Handcalcs/output9.png" /></p>
 
@@ -304,18 +306,18 @@ x_pos = b**2 - 4*a*c
 <img align="center" src="/assets/img/Handcalcs/table.png" /></p>
 
 <h3 id="it-supports-for-comment-rendering-too">It supports for comment rendering too!</h3>
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>%%render short params 6
-x_pos = -b + sqrt(b**2 - 4*a*c) / (2*a) -b + sqrt(b**2 - 4*a*c)/(2*a) #comments
-</code></pre></div></div>
+<div class="language-py highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="o">%%</span><span class="n">render</span> <span class="n">short</span> <span class="n">params</span> <span class="mi">6</span>
+<span class="n">x_pos</span> <span class="o">=</span> <span class="o">-</span><span class="n">b</span> <span class="o">+</span> <span class="n">sqrt</span><span class="p">(</span><span class="n">b</span><span class="o">**</span><span class="mi">2</span> <span class="o">-</span> <span class="mi">4</span><span class="o">*</span><span class="n">a</span><span class="o">*</span><span class="n">c</span><span class="p">)</span> <span class="o">/</span> <span class="p">(</span><span class="mi">2</span><span class="o">*</span><span class="n">a</span><span class="p">)</span> <span class="o">-</span><span class="n">b</span> <span class="o">+</span> <span class="n">sqrt</span><span class="p">(</span><span class="n">b</span><span class="o">**</span><span class="mi">2</span> <span class="o">-</span> <span class="mi">4</span><span class="o">*</span><span class="n">a</span><span class="o">*</span><span class="n">c</span><span class="p">)</span><span class="o">/</span><span class="p">(</span><span class="mi">2</span><span class="o">*</span><span class="n">a</span><span class="p">)</span> <span class="c1">#comments
+</span></code></pre></div></div>
 
 <p><img align="center" src="/assets/img/Handcalcs/comments.png" /></p>
 
 <h3 id="conditional-rendering">Conditional Rendering</h3>
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>%%render 
-#conditional statements
-x = 1
-if x &gt; 0: b = 2*x
-elif x &lt; 0: b=y
+<div class="language-py highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="o">%%</span><span class="n">render</span> 
+<span class="c1">#conditional statements
+</span><span class="n">x</span> <span class="o">=</span> <span class="mi">1</span>
+<span class="k">if</span> <span class="n">x</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">:</span> <span class="n">b</span> <span class="o">=</span> <span class="mi">2</span><span class="o">*</span><span class="n">x</span>
+<span class="k">elif</span> <span class="n">x</span> <span class="o">&lt;</span> <span class="mi">0</span><span class="p">:</span> <span class="n">b</span><span class="o">=</span><span class="n">y</span>
 </code></pre></div></div>
 <p><img align="center" src="/assets/img/Handcalcs/conditional.png" /></p>
 
