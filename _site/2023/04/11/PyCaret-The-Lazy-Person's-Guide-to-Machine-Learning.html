@@ -210,12 +210,18 @@
 
 <h3 id="comparing-models-">Comparing Models 🤔</h3>
 
-<p>Once you have set up your PyCaret environment, you can train and evaluate several machine learning models using the pycaret.classification.compare_models function. This function trains and evaluates several models using cross-validation(default fold of 10) and provides a summary table of the performance metrics for each model, such as accuracy, precision, recall, F1 score, and AUC. Based on this summary table, you can select the best-performing model for your task. 😎 Here’s an example of how to compare several classification models using PyCaret:</p>
+<p>Once you have set up your PyCaret environment, you can train and evaluate several machine learning models using the pycaret.classification.compare_models function. This function gives you the parameters by which the model it thinks is best model. You can also use <code class="language-plaintext highlighter-rouge">tune_model()</code> to do 10 fold cv for 10 different combinations 😎 Here’s an example of how to compare several classification models using PyCaret:</p>
 
 <div class="language-py highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">best_model</span> <span class="o">=</span> <span class="n">pycaret</span><span class="p">.</span><span class="n">classification</span><span class="p">.</span><span class="n">compare_models</span><span class="p">()</span>
 </code></pre></div></div>
 <p style="text-align:center;">
+<img src="/assets/img/Pycaret/tune_model.png" alt="compare_models" width="400" />
+</p>
+<p>The following performs various preprocessing steps such as splitting the dataset into training and testing sets, imputing missing values, encoding categorical variables, feature scaling, and more.</p>
 
+<div class="language-py highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">clf</span> <span class="o">=</span> <span class="n">setup</span><span class="p">(</span><span class="n">data</span><span class="p">,</span><span class="n">target</span><span class="o">=</span><span class="s">'Customer Status'</span><span class="p">)</span>
+</code></pre></div></div>
+<p style="text-align:center;">
 <img src="/assets/img/Pycaret/compare_models.png" alt="compare_models" width="400" />
 </p>
 <h3 id="creating--interpreting-models-️️">Creating &amp; Interpreting Models 🕵️‍♀️</h3>

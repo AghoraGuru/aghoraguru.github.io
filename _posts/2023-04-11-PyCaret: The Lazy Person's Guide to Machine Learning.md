@@ -1,6 +1,6 @@
 ---
 layout: post
-title: The Lazy Person's Guide to Machine Learning 🚀
+title: PyCaret 🚀
 feature-img: "assets/img/Pycaret/banner.png"
 
 ---
@@ -33,13 +33,20 @@ best_model = compare_models()
 ### Comparing Models 🤔
 
 
-Once you have set up your PyCaret environment, you can train and evaluate several machine learning models using the pycaret.classification.compare_models function. This function trains and evaluates several models using cross-validation(default fold of 10) and provides a summary table of the performance metrics for each model, such as accuracy, precision, recall, F1 score, and AUC. Based on this summary table, you can select the best-performing model for your task. 😎 Here's an example of how to compare several classification models using PyCaret:
+Once you have set up your PyCaret environment, you can train and evaluate several machine learning models using the pycaret.classification.compare_models function. This function gives you the parameters by which the model it thinks is best model. You can also use ```tune_model()``` to do 10 fold cv for 10 different combinations 😎 Here's an example of how to compare several classification models using PyCaret:
 
 ```py
 best_model = pycaret.classification.compare_models()
 ```
 <p style="text-align:center;">
+<img src="/assets/img/Pycaret/tune_model.png" alt="compare_models" width="400" >
+</p>
+The following performs various preprocessing steps such as splitting the dataset into training and testing sets, imputing missing values, encoding categorical variables, feature scaling, and more.
 
+```py
+clf = setup(data,target='Customer Status')
+```
+<p style="text-align:center;">
 <img src="/assets/img/Pycaret/compare_models.png" alt="compare_models" width="400" >
 </p>
 ### Creating & Interpreting Models 🕵️‍♀️

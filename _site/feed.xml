@@ -5,7 +5,7 @@
     <atom:link href="/feed.xml" rel="self" type="application/rss+xml"/>
     <link>http://localhost:4000/</link>
     <description>A website with blog posts ,pages and portfolio</description>
-    <pubDate>Tue, 11 Apr 2023 15:54:46 +0000</pubDate>
+    <pubDate>Tue, 11 Apr 2023 16:09:10 +0000</pubDate>
     
       <item>
         <title>The Lazy Person&apos;s Guide to Machine Learning 🚀</title>
@@ -36,12 +36,18 @@
 
 &lt;h3 id=&quot;comparing-models-&quot;&gt;Comparing Models 🤔&lt;/h3&gt;
 
-&lt;p&gt;Once you have set up your PyCaret environment, you can train and evaluate several machine learning models using the pycaret.classification.compare_models function. This function trains and evaluates several models using cross-validation(default fold of 10) and provides a summary table of the performance metrics for each model, such as accuracy, precision, recall, F1 score, and AUC. Based on this summary table, you can select the best-performing model for your task. 😎 Here’s an example of how to compare several classification models using PyCaret:&lt;/p&gt;
+&lt;p&gt;Once you have set up your PyCaret environment, you can train and evaluate several machine learning models using the pycaret.classification.compare_models function. This function gives you the parameters by which the model it thinks is best model. You can also use &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;tune_model()&lt;/code&gt; to do 10 fold cv for 10 different combinations 😎 Here’s an example of how to compare several classification models using PyCaret:&lt;/p&gt;
 
 &lt;div class=&quot;language-py highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;best_model&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;pycaret&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;classification&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;compare_models&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 &lt;p style=&quot;text-align:center;&quot;&gt;
+&lt;img src=&quot;/assets/img/Pycaret/tune_model.png&quot; alt=&quot;compare_models&quot; width=&quot;400&quot; /&gt;
+&lt;/p&gt;
+&lt;p&gt;The following performs various preprocessing steps such as splitting the dataset into training and testing sets, imputing missing values, encoding categorical variables, feature scaling, and more.&lt;/p&gt;
 
+&lt;div class=&quot;language-py highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;clf&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;setup&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;data&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;target&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&apos;Customer Status&apos;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p style=&quot;text-align:center;&quot;&gt;
 &lt;img src=&quot;/assets/img/Pycaret/compare_models.png&quot; alt=&quot;compare_models&quot; width=&quot;400&quot; /&gt;
 &lt;/p&gt;
 &lt;h3 id=&quot;creating--interpreting-models-️️&quot;&gt;Creating &amp;amp; Interpreting Models 🕵️‍♀️&lt;/h3&gt;
