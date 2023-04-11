@@ -1,6 +1,6 @@
 ---
 layout: post
-title: The Lazy Person's Guide to Machine Learning 🚀
+title: PyCaret 🚀
 feature-img: "assets/img/Pycaret/banner.png"
 
 ---
