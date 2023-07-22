@@ -13,10 +13,10 @@ theme_settings:
 
   # Header and footer text
   header_text: >
-                Home
-  header_text_feature_image:    
+    Home
+  header_text_feature_image:
   footer_text: >
-   Powered by nothing but Data.
+    Powered by nothing but Data.
 
   # Icons
   rss: false
@@ -31,11 +31,11 @@ theme_settings:
   gitter:
   google_plus:
   instagram: kalyan.aghora.shivam
-  linkedin:  aghoraguru
+  linkedin: aghoraguru
   pinterest:
   reddit:
   soundcloud:
-  stack_exchange:  # Full URL
+  stack_exchange: # Full URL
   steam:
   tumblr:
   twitter: aghoraguru
@@ -43,7 +43,7 @@ theme_settings:
   youtube:
 
   # Scripts
-  google_analytics: G-7598ZCNWX2 # Tracking ID, e.g. "UA-000000-01"
+  google_analytics: G-9DPN6XP8MY # Tracking ID, e.g. "UA-000000-01"
   disqus_shortname:
   katex: true # Enable if using math markup
   search: false # Enable the search feature
