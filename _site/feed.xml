@@ -5,10 +5,10 @@
     <atom:link href="/feed.xml" rel="self" type="application/rss+xml"/>
     <link>http://localhost:4000/</link>
     <description>A website with blog posts ,pages and portfolio</description>
-    <pubDate>Tue, 11 Apr 2023 16:09:10 +0000</pubDate>
+    <pubDate>Sat, 22 Jul 2023 06:08:01 +0000</pubDate>
     
       <item>
-        <title>The Lazy Person&apos;s Guide to Machine Learning 🚀</title>
+        <title>PyCaret 🚀</title>
         <link>/2023/04/11/PyCaret-The-Lazy-Person's-Guide-to-Machine-Learning.html</link>
         <guid isPermaLink="true">/2023/04/11/PyCaret-The-Lazy-Person's-Guide-to-Machine-Learning.html</guid>
         <description>&lt;h1 align=&quot;center&quot;&gt;The Lazy Person&apos;s Guide to Machine Learning 🚀 &lt;/h1&gt;
